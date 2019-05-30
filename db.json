@@ -1,113 +1,147 @@
 {
-    "enugu-hotels": [
-      {
-        "id": 1,
-        "name": "Palms Hotel",
-        "location": "64 Ezillo Strret Independence Layout, Enugu",
-        "price": "₦ 11,500/night",
-        "n-rooms": "35",
-        "hotel-info": [
-          "Restaurant",
-          "Bar/lounge",
-          "24 hrs Electricity",
-          "Security",
-          "Luggage Storage",
-          "Dstv",
-          "Air Condition",
-          "Adequate Parking space"
-        ],
-        "description": "Psalms Hotel has an exquisite restaurant that serves local Nigerian dishes and continental dishes. The onsite bar is well stocked with assorted dinks and wines. Room service and housekeeping is available for guests."
-      },
-      {
-        "id": 2,
-        "name": "Classy Hotel",
-        "location": "32 Ezillo Strret Independence Layout, Enugu",
-        "price": "₦ 15,500/night",
-        "n-rooms": "40",
-        "hotel-info": [
-          "Restaurant",
-          "Bar/lounge",
-          "24 hrs Electricity",
-          "Security",
-          "Luggage Storage",
-          "Dstv",
-          "Air Condition",
-          "Adequate Parking space"
-        ],
-        "description": "Classy Hotel is an elegant and well-crafted hotel located at 32 Ezilo Street, Independent Layout in Enugu State.The hotel features facilities like a bar and restaurant. Free Internet is assessable on the hotel premises."
-      },
-      {
-        "id": 3,
-        "name": "De Castle Resort",
-        "location": "No 14/16 Umuona Street , behind Park Lane Hospital, Ekulu West GRA",
-        "price": "₦ 25,500/night",
-        "n-rooms": "35",
-        "hotel-info": [
-          "Restaurant",
-          "Bar/lounge",
-          "24 hrs Electricity",
-          "Security",
-          "Luggage Storage",
-          "Dstv",
-          "Air Condition",
-          "Adequate Parking space"
-        ],
-        "description": "De Castle Resort is a luxury hotel located at 14, Umuona Street, behind Park Lane Hospital, Ekulu West GRA, Enugu, Nigeria. It is a traveller favourite due to its proximity to Akanu Ibiam International Airport, National Open University of Nigeria, Polo Park Mall, Ngwo Pine Forest, Enugu Sports Club and Nigerian Airforce 305 Flying School Base. The hotel is known for its large land area and its clean and attractive environment."
-      }],
-    "owerri-hotels": [
-      {
-        "id": 1,
-        "name": "Newton Hotels Limited Owerri",
-        "location": "Plot H2, Public Building Layout, West Of Secretariat Complex, Along Imo, Specialist Hospital Road, Off P/H Road, New Owerri, Imo State.",
-        "price": "₦ 11,500/night",
-        "n-rooms": "35",
-        "hotel-info": [
-          "Restaurant",
-          "Bar/lounge",
-          "24 hrs Electricity",
-          "Security",
-          "Luggage Storage",
-          "Dstv",
-          "Air Condition",
-          "Adequate Parking space"
-        ],
-        "description": "Newton hotel limited offers you the best of lodging facilities with ultramodern facilities. Whether it is business, leisure, or both, we cater for your lodging needs. We are located at Plot H2, Public Building Layout, West of Secretariat Complex, Along Imo, Specialist Hospital Road, Off P/H Road, New Owerri, Imo State."
-      },
-      {
-        "id": 2,
-        "name": "MARANATHA SUITES",
-        "location": "5 Maranatha Avenue, Plot SH/24, Commercial District G, New Owerri, Imo State.",
-        "price": "₦ 15,500/night",
-        "n-rooms": "40",
-        "hotel-info": [
-          "Restaurant",
-          "Bar/lounge",
-          "24 hrs Electricity",
-          "Security",
-          "Luggage Storage",
-          "Dstv",
-          "Air Condition",
-          "Adequate Parking space"
-        ],
-        "description": "Maranatha Suites is a 3-Star hotel located at 5, Maranatha Avenue, New Owerri, Owerri. It is top of the list for business and leisure travellers from all walks of life."
-      },
-      {
-        "id": 3,
-        "name": "Bayview Resorts and Hotels, Owerri",
-        "location": "Plot C/4, Housing Area B, New Owerri Layout, Opp. Ahiajoku Convention Center Off Port Harcourt Road, Owerri, Imo State.",
-        "price": "₦ 25,500/night",
-        "n-rooms": "35",
-        "hotel-info": [
-          "Restaurant",
-          "Bar/lounge",
-          "24 hrs Electricity",
-          "Security",
-          "Luggage Storage",
-          "Dstv",
-          "Air Condition",
-          "Adequate Parking space"
-        ],
-        "description": "Bayview Resorts and Hotels Owerri is a new generation hotel, with fresh details in design and luxury accommodations, at Plot C/4, Housing Area B, New Owerri Layout, opposite Ahiajoku Convention Center off Port Harcourt Road, Owerri. The public areas are stylish and contemporary, created from stone and accompanied by richly coloured furnishings."
-      }
-    ]
-  }
+  "enugu-hotels": [
+    {
+      "id": 1,
+      "name": "Palms Hotel",
+      "location": "64 Ezillo Strret Independence Layout, Enugu",
+      "price": "₦ 11,500/night",
+      "n-rooms": "35",
+      "hotel-info": [
+        "Restaurant",
+        "Bar/lounge",
+        "24 hrs Electricity",
+        "Security",
+        "Luggage Storage",
+        "Dstv",
+        "Air Condition",
+        "Adequate Parking space"
+      ],
+      "description": "Psalms Hotel has an exquisite restaurant that serves local Nigerian dishes and continental dishes. The onsite bar is well stocked with assorted dinks and wines. Room service and housekeeping is available for guests."
+    },
+    {
+      "id": 2,
+      "name": "Classy Hotel",
+      "location": "32 Ezillo Strret Independence Layout, Enugu",
+      "price": "₦ 15,500/night",
+      "n-rooms": "40",
+      "hotel-info": [
+        "Restaurant",
+        "Bar/lounge",
+        "24 hrs Electricity",
+        "Security",
+        "Luggage Storage",
+        "Dstv",
+        "Air Condition",
+        "Adequate Parking space"
+      ],
+      "description": "Classy Hotel is an elegant and well-crafted hotel located at 32 Ezilo Street, Independent Layout in Enugu State.The hotel features facilities like a bar and restaurant. Free Internet is assessable on the hotel premises."
+    },
+    {
+      "id": 3,
+      "name": "De Castle Resort",
+      "location": "No 14/16 Umuona Street , behind Park Lane Hospital, Ekulu West GRA",
+      "price": "₦ 25,500/night",
+      "n-rooms": "35",
+      "hotel-info": [
+        "Restaurant",
+        "Bar/lounge",
+        "24 hrs Electricity",
+        "Security",
+        "Luggage Storage",
+        "Dstv",
+        "Air Condition",
+        "Adequate Parking space"
+      ],
+      "description": "De Castle Resort is a luxury hotel located at 14, Umuona Street, behind Park Lane Hospital, Ekulu West GRA, Enugu, Nigeria. It is a traveller favourite due to its proximity to Akanu Ibiam International Airport, National Open University of Nigeria, Polo Park Mall, Ngwo Pine Forest, Enugu Sports Club and Nigerian Airforce 305 Flying School Base. The hotel is known for its large land area and its clean and attractive environment."
+    }
+  ],
+  "owerri-hotels": [
+    {
+      "id": 1,
+      "name": "Newton Hotels Limited Owerri",
+      "location": "Plot H2, Public Building Layout, West Of Secretariat Complex, Along Imo, Specialist Hospital Road, Off P/H Road, New Owerri, Imo State.",
+      "price": "₦ 11,500/night",
+      "n-rooms": "35",
+      "hotel-info": [
+        "Restaurant",
+        "Bar/lounge",
+        "24 hrs Electricity",
+        "Security",
+        "Luggage Storage",
+        "Dstv",
+        "Air Condition",
+        "Adequate Parking space"
+      ],
+      "description": "Newton hotel limited offers you the best of lodging facilities with ultramodern facilities. Whether it is business, leisure, or both, we cater for your lodging needs. We are located at Plot H2, Public Building Layout, West of Secretariat Complex, Along Imo, Specialist Hospital Road, Off P/H Road, New Owerri, Imo State."
+    },
+    {
+      "id": 2,
+      "name": "MARANATHA SUITES",
+      "location": "5 Maranatha Avenue, Plot SH/24, Commercial District G, New Owerri, Imo State.",
+      "price": "₦ 15,500/night",
+      "n-rooms": "40",
+      "hotel-info": [
+        "Restaurant",
+        "Bar/lounge",
+        "24 hrs Electricity",
+        "Security",
+        "Luggage Storage",
+        "Dstv",
+        "Air Condition",
+        "Adequate Parking space"
+      ],
+      "description": "Maranatha Suites is a 3-Star hotel located at 5, Maranatha Avenue, New Owerri, Owerri. It is top of the list for business and leisure travellers from all walks of life."
+    },
+    {
+      "id": 3,
+      "name": "Bayview Resorts and Hotels, Owerri",
+      "location": "Plot C/4, Housing Area B, New Owerri Layout, Opp. Ahiajoku Convention Center Off Port Harcourt Road, Owerri, Imo State.",
+      "price": "₦ 25,500/night",
+      "n-rooms": "35",
+      "hotel-info": [
+        "Restaurant",
+        "Bar/lounge",
+        "24 hrs Electricity",
+        "Security",
+        "Luggage Storage",
+        "Dstv",
+        "Air Condition",
+        "Adequate Parking space"
+      ],
+      "description": "Bayview Resorts and Hotels Owerri is a new generation hotel, with fresh details in design and luxury accommodations, at Plot C/4, Housing Area B, New Owerri Layout, opposite Ahiajoku Convention Center off Port Harcourt Road, Owerri. The public areas are stylish and contemporary, created from stone and accompanied by richly coloured furnishings."
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "email": "loudsdata@gmail.com",
+      "password": 12345
+    },
+    {
+      "id": 2,
+      "email": "lewisbrainy@gmail.com",
+      "password": 12345
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    }
+  ]
+}
