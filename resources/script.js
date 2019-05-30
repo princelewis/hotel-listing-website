@@ -9,7 +9,7 @@ $(document).ready(function() {
             success: function(data) {
                 for(var i=0; i<data.length; i++) {
                     if (email === data[i].email && password === data[i].password) {
-                        window.location.replace("hotel-listing-website/index-admin.html");
+                        window.location.href="index-admin.html";
                         break;
                     }
                     else if (email !== data[i].email && password === data[i].password) {

@@ -115,12 +115,12 @@
     {
       "id": 1,
       "email": "loudsdata@gmail.com",
-      "password": 12345
+      "password": "12345"
     },
     {
       "id": 2,
       "email": "lewisbrainy@gmail.com",
-      "password": 12345
+      "password": "12345"
     }
   ]
 }
