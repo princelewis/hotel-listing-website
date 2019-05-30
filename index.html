@@ -43,8 +43,8 @@
             <label for="city">search by city:</label>
             <select id="city" class="form-control">
               <option value="">Select...</option>
-              <option value="owerri-hotels">Owerri</option>
-              <option value="enugu-hotels">Enugu</option>
+              <option value="owerri">Owerri</option>
+              <option value="enugu">Enugu</option>
             </select>
           </div>
 
@@ -64,31 +64,42 @@
       <div class="col-md-4"></div>
     </div>
     <br><br><br>
+    
+    <div class="d-flex flex-wrap justify-content-start">
+        <div class="card card-cascade hotel-child hide flex-item" id="list1" style="max-width: 25%">
+            <!--Card image-->
+            <div class="view view-cascade overlay">
+              <img src="resources/images/psalms-hotel-enugu-main.jpg" class="card-img-top" alt="wider">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body card-body-cascade">
+              <h5 class="card-title d-flex"><strong class="hotl-name">Palms Hotel</strong> <span class="hotl-price ml-auto text-primary">N20,000</span></h5>
+              <p class="indigo-text"><strong>64 Ezillo Strret Independence Layout, Enugu</strong></p>
+              
 
-    <div class="row mt-2 ">
-      <div class="col-lg-4 col-md-12" >
-        <!--Card Wider-->
-        <div class="card card-cascade wider" id="list1">
-          <!--Card image-->
-          <div class="view view-cascade overlay">
-            <img src="resources/images/psalms-hotel-enugu-main.jpg" class="card-img-top" alt="wider">
-            <a href="#">
-              <div class="mask rgba-white-slight"></div>
-            </a>
+              <a href="#" class="btn btn-primary stretched-link">View</a>
+            </div>
           </div>
-          <div class="card-body card-body-cascade text-center">
-            <h4 class="card-title"><strong>Palms Hotel</strong></h4>
-            <h5 class="indigo-text"><strong>64 Ezillo Strret Independence Layout, Enugu</strong></h5>
-
-            <p class="card-text">Psalms Hotel has an exquisite restaurant that serves local Nigerian dishes and
-              continental dishes. The onsite bar is well stocked with assorted dinks and wines. Room service and
-              housekeeping is available for guests. 
-            </p>
-            <a href="#" class="btn btn-primary stretched-link"> book now</a>
-          </div>
-        </div>  
-      </div>
     </div>
+
+
+    <div class="card card-cascade wider" id="list1" style="display: none">
+      <!--Card image-->
+      <div class="view view-cascade overlay">
+        <img src="resources/images/psalms-hotel-enugu-main.jpg" class="card-img-top" alt="wider">
+        <a href="#">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body card-body-cascade">
+          <h5 class="card-title d-flex"><strong class="hotl-name">Palms Hotel</strong> <span class="hotl-price ml-auto text-primary">N20,000</span></h5>
+          <p class="indigo-text"><strong>64 Ezillo Strret Independence Layout, Enugu</strong></p>
+          <a href="#" class="btn btn-primary stretched-link">View</a>
+      </div>
+    </div>  
+  
 
       <div class="modal fade" id="popUp">
         <div class="modal-dialog modal-sm">

@@ -1,5 +1,8 @@
 // $('#list1').hide();
 $(document).ready(function() {
+    $.ajax({
+        
+    })
 
     $("#bt1").click(function(){
         var email = $("#email").val();
@@ -29,5 +32,32 @@ $(document).ready(function() {
                 }
             }
         })
+    })
+    $("form[name=update]").submit(function(e){
+        var city = $("#city").val();
+        var hName = $("#hotel-name").val();
+        var hLocation = $("#hotel-address").val();
+        var hPrice = $("#price").val();
+        var nRooms = $("#nrooms").val();
+        var hotelInfo = $("#hotel-amenities").val();
+        var description = $("#hotel-desc").val();
+        var hdata = {
+            "name": hName,
+            "location": hLocation,
+            "price": hPrice,
+            "n-rooms":nRooms,
+            "hotel-info": hotelInfo,
+            "description": description
+        }
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:3000/"+city+"-hotels",
+            data: hdata,
+            success: function(data) {
+                alert("Hotel created");
+
+            }
+        })
+        e.preventDefault();
     })
 })
