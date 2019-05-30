@@ -1,4 +1,6 @@
+// $('#list1').hide();
 $(document).ready(function() {
+
     $("#bt1").click(function(){
         var email = $("#email").val();
         var password = $("#password").val();

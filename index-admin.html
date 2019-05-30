@@ -2,36 +2,56 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Checky.com</title>
-  <link rel="stylesheet" type="text/css" href="resources/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="resources/style.css">
-  <script src="resources/jquery.min.js"></script>
-  <script src="resources/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checky.com</title>
+    <link rel="stylesheet" type="text/css" href="resources/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <script src="resources/jquery.min.js"></script>
+    <script src="resources/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Checky.com</a>
-    </nav>
-    <!-- Panel-->
-    <div class="card text-center">
-      <div class="card-header">
-        <ul class="nav nav-pills card-header-pills">
-          <li class="nav-item">
-            <!-- <a class="nav-link active" href="#">Active</a> -->
-          </li>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Checky.com</a>
+        </nav>
+        <!-- Panel-->
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                    </li>
 
-        </ul>
-      </div>
-    </div>
-    <!--/Panel-->
-
+                </ul>
+            </div>
         </div>
-<script src="resources/script.js"></script>
+        <!--/Panel-->
+
+        <form class="border border-light p-5">
+            <p class="h4 mb-4 text-center">Update Hotel</p>
+
+            <input type="text" id="hotel-name" class="form-control mb-4" placeholder="Hotel name">
+            <div class="form-group search">
+                    <label for="price">hotel price</label>
+                    <select id="price" class="form-control">
+                      <option value="">Select...</option>
+                      <option value="3,000-10,000">3,000-10,000</option>
+                      <option value="11,000-15,000">11,000-15,000</option>
+                      <option value="15,000-25,000">15,000-25,000</option>
+                    </select>
+            </div>
+            <!-- <input type="text" id="hotel-price" class="form-control mb-4" placeholder="Hotel price"> -->
+            <input type="text" id="hotel-address" class="form-control mb-4" placeholder="Hotel address">
+            <input type="text" id="hotel-amenities" class="form-control mb-4" placeholder="Hotel amenities">
+            <input type="text" id="hotel-desc" class="form-control mb-4" placeholder="Description">
+
+            <button id="update" class="btn btn-info btn-block my-4" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+    <script src="resources/script.js"></script>
 </body>
 
 </html>
