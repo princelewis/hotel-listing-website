@@ -5,7 +5,7 @@
       "city": "Enugu",
       "name": "Palms Hotel",
       "location": "64 Ezillo Strret Independence Layout, Enugu",
-      "price": "₦ 11,500/night",
+      "price": "11,500-15,000",
       "n-rooms": "35",
       "hotel-info": [
         "Restaurant",
@@ -21,9 +21,10 @@
     },
     {
       "id": 2,
+      "city": "Enugu",
       "name": "Classy Hotel",
       "location": "32 Ezillo Strret Independence Layout, Enugu",
-      "price": "₦ 15,500/night",
+      "price": "15,500-20,000",
       "n-rooms": "40",
       "hotel-info": [
         "Restaurant",
@@ -39,9 +40,10 @@
     },
     {
       "id": 3,
+      "city": "Enugu",
       "name": "De Castle Resort",
       "location": "No 14/16 Umuona Street , behind Park Lane Hospital, Ekulu West GRA",
-      "price": "₦ 25,500/night",
+      "price": "25,500-30,000",
       "n-rooms": "35",
       "hotel-info": [
         "Restaurant",
@@ -54,14 +56,13 @@
         "Adequate Parking space"
       ],
       "description": "De Castle Resort is a luxury hotel located at 14, Umuona Street, behind Park Lane Hospital, Ekulu West GRA, Enugu, Nigeria. It is a traveller favourite due to its proximity to Akanu Ibiam International Airport, National Open University of Nigeria, Polo Park Mall, Ngwo Pine Forest, Enugu Sports Club and Nigerian Airforce 305 Flying School Base. The hotel is known for its large land area and its clean and attractive environment."
-    }
-  ],
-  "owerri-hotels": [
+    },
     {
-      "id": 1,
+      "id": 4,
+      "city": "Owerri",
       "name": "Newton Hotels Limited Owerri",
       "location": "Plot H2, Public Building Layout, West Of Secretariat Complex, Along Imo, Specialist Hospital Road, Off P/H Road, New Owerri, Imo State.",
-      "price": "₦ 11,500/night",
+      "price": "11,500-18,000",
       "n-rooms": "35",
       "hotel-info": [
         "Restaurant",
@@ -76,10 +77,11 @@
       "description": "Newton hotel limited offers you the best of lodging facilities with ultramodern facilities. Whether it is business, leisure, or both, we cater for your lodging needs. We are located at Plot H2, Public Building Layout, West of Secretariat Complex, Along Imo, Specialist Hospital Road, Off P/H Road, New Owerri, Imo State."
     },
     {
-      "id": 2,
+      "id": 5,
+      "city": "Owerri",
       "name": "MARANATHA SUITES",
       "location": "5 Maranatha Avenue, Plot SH/24, Commercial District G, New Owerri, Imo State.",
-      "price": "₦ 15,500/night",
+      "price": "15,500-22,000",
       "n-rooms": "40",
       "hotel-info": [
         "Restaurant",
@@ -94,10 +96,11 @@
       "description": "Maranatha Suites is a 3-Star hotel located at 5, Maranatha Avenue, New Owerri, Owerri. It is top of the list for business and leisure travellers from all walks of life."
     },
     {
-      "id": 3,
+      "id": 6,
+      "city": "Owerri",
       "name": "Bayview Resorts and Hotels, Owerri",
       "location": "Plot C/4, Housing Area B, New Owerri Layout, Opp. Ahiajoku Convention Center Off Port Harcourt Road, Owerri, Imo State.",
-      "price": "₦ 25,500/night",
+      "price": "25,500-35,000",
       "n-rooms": "35",
       "hotel-info": [
         "Restaurant",
@@ -112,13 +115,46 @@
       "description": "Bayview Resorts and Hotels Owerri is a new generation hotel, with fresh details in design and luxury accommodations, at Plot C/4, Housing Area B, New Owerri Layout, opposite Ahiajoku Convention Center off Port Harcourt Road, Owerri. The public areas are stylish and contemporary, created from stone and accompanied by richly coloured furnishings."
     },
     {
-      "name": "hudhfefiu",
+      "city": "Portharcourt",
+      "name": "china hotel",
       "location": "No. 58 chime Avenue",
-      "price": "3,000-10,000",
+      "price": "11,000-15,000",
       "n-rooms": "56",
-      "hotel-info": "water,light",
-      "description": "this is what you ",
-      "id": 4
+      "hotel-info": [
+        "water,light,swimming pool"
+      ],
+      "description": "a very awesome place to be in",
+      "id": 7
+    },
+    {
+      "city": "Abuja",
+      "name": "Transcorp Hotels",
+      "location": "No. 88 Obafemi Awolowo Rd.",
+      "price": "15,000-25,000",
+      "n-rooms": "39",
+      "hotel-info": "water,light,swimming pool",
+      "description": "too awesome",
+      "id": 8
+    },
+    {
+      "city": "Lagos",
+      "name": "Eko Hotel",
+      "location": "23 Victoria Island",
+      "price": "",
+      "n-rooms": "56",
+      "hotel-info": "water,light,swimming pool",
+      "description": "a very awesome place to be in",
+      "id": 9
+    },
+    {
+      "city": "Lagos",
+      "name": "checky Hotel",
+      "location": "No. 88 Obafemi Awolowo Rd.",
+      "price": "",
+      "n-rooms": "56",
+      "hotel-info": "water,light,swimming pool",
+      "description": "a very awesome place to be in",
+      "id": 10
     }
   ],
   "admin": [
