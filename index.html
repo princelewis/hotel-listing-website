@@ -20,9 +20,9 @@
         <button class="btn btn-success btn-md my-0" type="button" data-toggle="modal" data-target="#popUp">
           Admin Login
         </button>
-        <button id="addbtn" type="button" class="btn btn-success btn-md ml-2 hide" data-toggle="modal" data-target="#create">
+        <!-- <button id="addbtn" type="button" class="btn btn-success btn-md ml-2 hide" data-toggle="modal" data-target="#create">
           <a class="text-white">Add New hotel</a>
-        </button>
+        </button> -->
       </form>
     </nav>
 
@@ -45,24 +45,14 @@
           <h5>Select an Option</h5>
           <div class="form-group search">
             <label for="city">search by city:</label>
-            <select id="city" class="form-control">
+            <select id="select-city" class="form-control">
               <option value="">Select...</option>
-              <option value="owerri">Owerri</option>
+              <option  value="owerri">Owerri</option>
               <option value="enugu">Enugu</option>
             </select>
           </div>
 
-
-          <div class="form-group">
-            <label for="price">Search by average price:</label>
-            <select id="price" class="form-control">
-              <option value="">Select...</option>
-              <option value="3000">Less than N10000</option>
-              <option value="10000-200000">N10000 - N20000</option>
-            </select>
-          </div>
-
-          <button type="submit" class="btn btn-success mt-2">Search</button>
+          <button id="search" type="submit" class="btn btn-success mt-2">Search</button>
         </form>
 
       </div>
@@ -78,7 +68,7 @@
     <div class="card card-cascade hotel-child hide m-2 wider" style="max-width: 32%">
       <!--Card image-->
       <div class="view view-cascade overlay">
-        <img src="resources/images/psalms-hotel-enugu-main.jpg" class="card-img-top hotl-img" alt="wider">
+        <img src="resources/images/hotel-3.jpg" class="card-img-top hotl-img" alt="wider">
         <a href="#">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -89,8 +79,8 @@
         <h6 class="hotl-city">Enugu</h6>
         <p class="indigo-text"><strong class="hotl-address">64 Ezillo Strret Independence Layout, Enugu</strong></p>
 
-        <a href="#" class="btn btn-primary view-hotel stretched-link">View</a>
-        <a id="del" href="#" class="btn btn-danger hide view-hotel stretched-link ">Delete</a>
+        <a  class="btn btn-primary view-hotel stretched-link">View</a>
+        <a class="btn btn-danger hide del-hotel stretched-link ">Delete</a>
       </div>
     </div>
 
@@ -117,40 +107,33 @@
       </div>
     </div>
 
-    <div class="modal fade" id="create">
-      <div class="modal-dialog modal-md">
+    <div class="modal fade viewup">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header bg-primary">
             <h6 class="modal-title text-white">Create Hotel</h6>
             <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-            <form name="update" class="border border-light p-5">
-              <!-- <p class="h4 mb-4 text-center">Create Hotel</p> -->
-              <input type="text" id="citya" class="form-control mb-4" placeholder="City">
+              <div class="jumbotron text-center">
 
-              <input type="text" id="hotel-name" class="form-control mb-4" placeholder="Hotel name">
-              <div class="form-group search">
-                <label for="price">hotel price</label>
-                <select id="price" class="form-control">
-                  <option value="">Select...</option>
-                  <option value="3,000-10,000">3,000-10,000</option>
-                  <option value="11,000-15,000">11,000-15,000</option>
-                  <option value="15,000-25,000">15,000-25,000</option>
-                </select>
-              </div>
-              <!-- <input type="text" id="hotel-price" class="form-control mb-4" placeholder="Hotel price"> -->
-              <input type="text" id="hotel-address" class="form-control mb-4" placeholder="Hotel address">
-              <input type="text" id="hotel-amenities" class="form-control mb-4" placeholder="Hotel amenities">
-              <input type="text" id="nrooms" class="form-control mb-4" placeholder="Number of rooms">
-              <input type="text" id="hotel-desc" class="form-control mb-4" placeholder="Description">
-
-              <button id="update" class="btn btn-info btn-block my-4" type="submit">Update</button>
-          </div>
-          </form>
-        </div>
+                  <h4 class="card-title h4 pb-2 vhotel-name"><strong>Palms Hotel</strong></h4>
+                
+                  <div class="view overlay my-4">
+                    <img src="resources/images/hotel-10.jpg" class="img-fluid vhotel-img" alt="">
+                    <a href="#">
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <h4 class="card-title h4 pb-2 vhotel-city"><strong>Enugu</strong></h4><span
+                  class="vhotel-price ml-auto text-primary">N20,000</span></h5>
+                  <h5 class="vhotel-address indigo-text h5 mb-4">64 Ezillo Strret Independence Layout, Enugu</h5>
+                
+                  <p class="card-text">Bayview Resorts and Hotels Owerri is a new generation hotel, with fresh details in design and luxury accommodations, at Plot C/4, Housing Area B, New Owerri Layout, opposite Ahiajoku Convention Center off Port Harcourt Road, Owerri. The public areas are stylish and contemporary, created from stone and accompanied by richly coloured furnishings.</p>
+                </div>
+         </div>
       </div>
-    </div>
+    </div> 
   </div>
 
   </div>

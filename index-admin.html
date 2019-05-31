@@ -16,6 +16,11 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="#">Checky.com</a>
+            <form class="form-inline ml-auto">
+            <button id="addbtn" type="button" class="btn btn-success btn-md ml-2 " data-toggle="modal" data-target="#create">
+                    <a class="text-white">Add New hotel</a>
+                  </button>
+            </form>
         </nav>
         <!-- Panel-->
         <div class="card text-center">
@@ -27,31 +32,65 @@
                 </ul>
             </div>
         </div>
-        <!--/Panel-->
+        <div class="d-flex flex-wrap hotel-container justify-content-start">
 
-        <form name="update" class="border border-light p-5">
-            <p class="h4 mb-4 text-center">Create Hotel</p>
-            <input type="text" id="citya" class="form-control mb-4" placeholder="City">
+        </div>
 
-            <input type="text" id="hotel-name" class="form-control mb-4" placeholder="Hotel name">
-            <div class="form-group search">
-                <label for="price">hotel price</label>
-                <select id="price" class="form-control">
-                    <option value="">Select...</option>
-                    <option value="3,000-10,000">3,000-10,000</option>
-                    <option value="11,000-15,000">11,000-15,000</option>
-                    <option value="15,000-25,000">15,000-25,000</option>
-                </select>
+
+        <div class="card card-cascade hotel-child hide m-2 wider" style="max-width: 32%">
+            <!--Card image-->
+            <div class="view view-cascade overlay">
+                <img src="resources/images/hotel-3.jpg" class="card-img-top hotl-img" alt="wider">
+                <a href="#">
+                    <div class="mask rgba-white-slight"></div>
+                </a>
             </div>
-            <!-- <input type="text" id="hotel-price" class="form-control mb-4" placeholder="Hotel price"> -->
-            <input type="text" id="hotel-address" class="form-control mb-4" placeholder="Hotel address">
-            <input type="text" id="hotel-amenities" class="form-control mb-4" placeholder="Hotel amenities">
-            <input type="text" id="nrooms" class="form-control mb-4" placeholder="Number of rooms">
-            <input type="text" id="hotel-desc" class="form-control mb-4" placeholder="Description">
+            <div class="card-body card-body-cascade">
+                <h5 class="card-title d-flex"><span><strong class="hotl-name">Palms Hotel - </strong><span
+                            class="hotl-price ml-auto text-primary">N20,000</span></h5>
+                <h6 class="hotl-city">Enugu</h6>
+                <p class="indigo-text"><strong class="hotl-address">64 Ezillo Strret Independence Layout, Enugu</strong>
+                </p>
 
-            <button id="update" class="btn btn-info btn-block my-4" type="submit">Update</button>
-    </div>
-    </form>
+                <a href="#" class="btn btn-primary view-hotel stretched-link">View</a>
+                <a class="btn btn-danger del-hotel stretched-link ">Delete</a>
+            </div>
+        </div>
+        <div class="modal fade" id="create">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <h6 class="modal-title text-white">Create Hotel</h6>
+                        <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="update" class="border border-light p-5">
+                            <!-- <p class="h4 mb-4 text-center">Create Hotel</p> -->
+                            <input type="text" id="citya" class="form-control mb-4" placeholder="City">
+
+                            <input type="text" id="hotel-name" class="form-control mb-4" placeholder="Hotel name">
+                            <div class="form-group search">
+                                <label for="price">hotel price</label>
+                                <select id="price" class="form-control">
+                                    <option value="">Select...</option>
+                                    <option value="3,000-10,000">3,000-10,000</option>
+                                    <option value="11,000-15,000">11,000-15,000</option>
+                                    <option value="15,000-25,000">15,000-25,000</option>
+                                </select>
+                            </div>
+                            <!-- <input type="text" id="hotel-price" class="form-control mb-4" placeholder="Hotel price"> -->
+                            <input type="text" id="hotel-address" class="form-control mb-4" placeholder="Hotel address">
+                            <input type="text" id="hotel-amenities" class="form-control mb-4"
+                                placeholder="Hotel amenities">
+                            <input type="text" id="nrooms" class="form-control mb-4" placeholder="Number of rooms">
+                            <input type="text" id="hotel-desc" class="form-control mb-4" placeholder="Description">
+
+                            <button id="update" class="btn btn-info btn-block my-4" type="submit">Update</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="resources/script.js"></script>
 </body>

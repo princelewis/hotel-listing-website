@@ -1,4 +1,4 @@
-// $('#list1').hide();
+
 $(document).ready(function() {
     $(".hide").hide();
     $.ajax({
@@ -6,9 +6,9 @@ $(document).ready(function() {
         url: 'http://localhost:3000/hotels',
         success: function(data){
             showAllHotels(data);
+            fillCity(data);
         }
     })
-
     $("#bt1").click(function(){
         var email = $("#email").val();
         var password = $("#password").val();
@@ -20,10 +20,10 @@ $(document).ready(function() {
                 for(var i=0; i<data.length; i++) {
                     if (email === data[i].email && password === data[i].password) {
                         // location.reload();
-                        $("#addbtn").show();
-                        $("#del").show();
+                        // $("#addbtn").show();
+                         $(".del-hotel").show();
                         // $("#popUp").hide();
-                        // window.location.href="index-admin.html";
+                        window.location.href="index-admin.html";
                         break;
                     }
                     else if (email !== data[i].email && password === data[i].password) {
@@ -39,9 +39,13 @@ $(document).ready(function() {
                         break;
                     }
                 }
+
             }
         })
     })
+
+
+
     $("form[name=update]").submit(function(e){
         var city = $("#citya").val();
         var hName = $("#hotel-name").val();
@@ -71,10 +75,12 @@ $(document).ready(function() {
         })
         e.preventDefault();
     })
+
 });
 
 function showAllHotels(data){
     var container = $(".hotel-container");
+    container.empty()
     if(data.length != 0){
         var hotelChild = $(".hotel-child");
         data.forEach(function(hotel){
@@ -91,14 +97,74 @@ function showAllHotels(data){
             newHotel.find(".hotl-price").text("₦"+hotelPrice);
             newHotel.find(".hotl-address").text(hotel["location"]);
             var viewButton = newHotel.find(".view-hotel");
-            viewButton.click(function(hotel){
-                displayHotelDetails();
+            var deleteButton = newHotel.find(".del-hotel");
+            viewButton.click(function(){
+                displayHotelDetails(hotel);
+            });
+            deleteButton.click(function(){
+                deleteHotel(hotelId);
             });
             newHotel.appendTo(container).show();
         });
     }
 }
 
-function displayHotelDetails(hotel){
-    alert("Details");
+function deleteHotel(hotelId){
+    $.ajax({
+        type:'DELETE',
+        url:'http://localhost:3000/hotels/'+hotelId,
+        success: function() {
+            location.reload();
+            
+        }
+    })
 }
+
+function displayHotelDetails(hotel){
+
+    $(".viewup").on("show.bs.modal", function(){
+        var hotelId = hotel["id"];
+        var imgUrl = "resources/images/hotel-"+hotelId+".jpg"
+        $(".vhotel-img").attr("src", imgUrl);
+        $(".vhotel-name").text(hotel["name"]+" - ");
+        $(".vhotel-city").text(hotel["city"]);
+        var hotelPrice = hotel["price"];
+        hotelPrice = hotelPrice.split("-")[1];
+        $(".vhotel-price").text("₦"+hotelPrice);
+        $(".vhotel-address").text(hotel["location"]);
+    }).modal("show");
+    
+}
+
+function fillCity(data){
+    var cities = new Array();
+    var citySelect = $("#select-city");
+    citySelect.empty();
+    $("<option>").text("Select city").appendTo(citySelect);
+    for(var i = 0; i < data.length; i++){
+        var city = data[i]["city"];
+        var check = cities.includes(city);
+        if(check){
+            continue;
+        }else{
+            $("<option>").text(city).val(city).appendTo(citySelect);
+            cities.push(city);
+        }
+    }
+}
+
+$("#select-city").change(function(e){
+    var city = $(this).val();
+    if(city === "Select city"){
+
+    }else{
+        var url = 'http://localhost:3000/hotels/?city='+city;
+        $.ajax({
+                    type: 'GET',
+                    url: url,
+                    success:function(data) { 
+                        showAllHotels(data);
+                    }
+            });
+}
+})
